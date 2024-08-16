@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y nginx git && apt-get clean
 WORKDIR /app
 
 # Clone the GitHub repository
-RUN git clone https://github.com/PeterTSmith1997/YWS-data .
+RUN git clone git@github.com:PeterTSmith1997/YWS-data.git
 
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
