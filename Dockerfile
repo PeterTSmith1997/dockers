@@ -17,7 +17,7 @@ RUN mkdir -p /root/.ssh/ && \
 RUN echo "Host *\n\tStrictHostKeyChecking no\n" >> /root/.ssh/config
 
 # Clone the private GitHub repository
-RUN git clone git@github.com:PeterTSmith1997/YWS-data.git
+RUN git clone git@github.com:PeterTSmith1997/YWS-data.git .
 
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
